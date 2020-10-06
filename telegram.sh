@@ -10,7 +10,7 @@ login_name="$(whoami)"
 login_hostname="$(hostname -f)"
 
 # Country by ip-api.com
-login_country="$(curl "http://ip-api.com/line/"$login_ip"?fields=1")"
+login_country="$(curl --silent "http://ip-api.com/line/"$login_ip"?fields=1")" 
 
 # Message
 # Includes Hostname, Username, IP, Country, Date & Time
